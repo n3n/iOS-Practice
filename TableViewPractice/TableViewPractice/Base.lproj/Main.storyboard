@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--List Table View Controller-->
+        <scene sceneID="VoL-vo-0eI">
+            <objects>
+                <tableViewController id="Dfp-J6-pV3" customClass="ListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="195" sectionHeaderHeight="28" sectionFooterHeight="28" id="a6h-9j-fHY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="195" id="xve-oB-6zO" customClass="FeedTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="195"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xve-oB-6zO" id="b5a-M8-FbM">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="194"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nonthaburi, Thailand." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4C-kF-7HW">
+                                            <rect key="frame" x="54" y="10" width="165" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="i-location" translatesAutoresizingMaskIntoConstraints="NO" id="jIt-na-HeK">
+                                            <rect key="frame" x="26" y="9" width="15" height="23"/>
+                                            <animations/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rudro-avatar" translatesAutoresizingMaskIntoConstraints="NO" id="GQD-J3-Rkj">
+                                            <rect key="frame" x="33" y="62" width="96" height="92"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nonpawit Teerachetmongkol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weT-gm-p8M">
+                                            <rect key="frame" x="149" y="43" width="429" height="18"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="71g-rd-wah">
+                                            <rect key="frame" x="149" y="62" width="429" height="117"/>
+                                            <animations/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore madolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="addressLabel" destination="e4C-kF-7HW" id="LEG-el-bK8"/>
+                                    <outlet property="descriptionTextView" destination="71g-rd-wah" id="d00-dX-oRZ"/>
+                                    <outlet property="fullnameLabel" destination="weT-gm-p8M" id="zkr-jz-p2K"/>
+                                    <outlet property="profileImage" destination="GQD-J3-Rkj" id="5xb-so-MhX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dfp-J6-pV3" id="Zfy-ZY-GxI"/>
+                            <outlet property="delegate" destination="Dfp-J6-pV3" id="mqP-ef-bVI"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikC-gl-4fq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408" y="496"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="i-location" width="287" height="440"/>
+        <image name="rudro-avatar" width="300" height="300"/>
+    </resources>
+</document>
